@@ -5,15 +5,14 @@ road = list(map(int, sys.stdin.readline().split()))
 oil = list(map(int, sys.stdin.readline().split()))
 
 oil.pop()
-cost = 0
-min_oil = min(oil)
+cost = oil[0] * road[0]
+min_oil = oil[0]
 
-for i in range(N-1):
+for i in range(1, N-1):
     if oil[i] > min_oil:
-        cost += oil[i] * road[i]
+        cost += min_oil * road[i]
     else:
-        road = road[i::]
-        cost += sum(road) * oil[i]
-        break
+        min_oil = oil[i]
+        cost += min_oil * road[i]
 
 print(cost)
