@@ -1,4 +1,4 @@
-# baekjoon
+
 
 이 레포지토리는 [백준허브](https://github.com/BaekjoonHub/BaekjoonHub)를 활용해 백준 문제 풀이를 자동 업로드합니다.  
 각 문제별로 직접 고민한 풀이 방식, 예외 처리, 사용한 알고리즘 등을 주석이나 `.md` 파일로 정리해두었습니다.
